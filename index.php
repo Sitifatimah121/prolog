@@ -48,11 +48,20 @@
         <!-- Jumbotron content -->
         <div class="py-4"></div>
         <div class="jumbotron bg-pinky rounded">
-            <h1 class="display-4">Hello,<br> world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="btn btn-primary btn-md" href="#" role="button">Explore now</a>
+            <div class="row">
+                <div class="col-md">
+                    <h1 class="display-4">Hello, World!</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed earum, quas delectus, quibusdam illo vel voluptatem nesciunt quo maxime quidem error ducimus consequuntur</p>
+                    <hr class="my-4">
+                    <a href="http://">How they work&nbsp;&nbsp;<span>&#10230;</span></a>
+                </div>
+                <div class="col-md">
+                    <div class="content-box">
+                        <img class="image-ilustrator" src="asset/image_content/pale-order-completed.png" alt="Ilustration by. Icons8">
+                    </div>
+                </div>
+            </div>
+            <div class="py-4"></div>
         </div>
 
         <div class="row">
@@ -179,3 +188,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
+
+<!-- https://icons8.com -->

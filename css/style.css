@@ -1,7 +1,26 @@
 .bg-pinky {
     background-color: #FCE0DC;
 }
-
+    
 .rounded {
     border-radius: 20px !important;
+}
+
+.content-box {
+    position: static;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+}
+
+img.image-ilustrator {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    max-width: 450px;
+    display: block;
+}
+
+.w-100 {
+    max-width: 300px;
 }
