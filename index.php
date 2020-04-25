@@ -68,10 +68,18 @@
 
                 <div class="card-columns">
                     <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="asset/image_content/art1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Card title that wraps to a new line</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="clearfix">
+                            <div class="float-left">
+                                &#9734; 4.6
+                            </div>
+                            <div class="float-right">
+                                <p class="card-text"><small class="text-muted">By. Missipi</small></p>
+                            </div>
+                        </div>
                         </div>
                     </div>
                     <div class="card p-3">
@@ -85,11 +93,18 @@
                         </blockquote>
                     </div>
                     <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="asset/image_content/art4.png" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <div class="clearfix">
+                            <div class="float-left">
+                                &#9734; 4.6
+                            </div>
+                            <div class="float-right">
+                                <p class="card-text"><small class="text-muted">By. Alex32</small></p>
+                            </div>
+                        </div>
                         </div>
                     </div>
                     <div class="card bg-primary text-white text-center p-3">
@@ -110,23 +125,45 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="asset/image_content/art2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="clearfix">
+                                <div class="float-left">
+                                    &#9734; 4.6
+                                </div>
+                                <div class="float-right">
+                                    <p class="card-text"><small class="text-muted">By. Muvin</small></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card p-3 text-right">
-                        <blockquote class="blockquote mb-0">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <footer class="blockquote-footer">
-                            <small class="text-muted">
-                            Someone famous in <cite title="Source Title">Source Title</cite>
-                            </small>
-                        </footer>
-                        </blockquote>
+                    <div class="card">
+                        <img src="asset/image_content/art3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <div class="clearfix">
+                            <div class="float-left">
+                                &#9734; 4.6
+                            </div>
+                            <div class="float-right">
+                                <p class="card-text"><small class="text-muted">By. Grizi</small></p>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                     <div class="card">
                         <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <div class="clearfix">
+                            <div class="float-left">
+                                &#9734; 4.6
+                            </div>
+                            <div class="float-right">
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
