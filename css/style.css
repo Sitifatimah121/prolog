@@ -25,3 +25,9 @@ img.image-ilustrator {
 .w-100 {
     max-width: 300px;
 }
+
+footer {
+    background: rgb(198, 232, 255);
+    background: linear-gradient(0deg, rgba(198, 232, 255, 1) 0%, rgba(233, 246, 255, 1) 40%, rgba(255, 255, 255, 1) 100%);
+}
+
