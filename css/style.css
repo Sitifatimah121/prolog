@@ -1,5 +1,6 @@
 .bg-pinky {
-    background-color: #FCE0DC;
+    /* background-color: #FCE0DC; */
+    background-color: #E9F6FF;
 }
     
 .rounded {
@@ -16,7 +17,7 @@
 img.image-ilustrator {
     position: absolute;
     right: 20px;
-    top: 0px;
+    bottom: 50px;
     max-width: 450px;
     display: block;
 }

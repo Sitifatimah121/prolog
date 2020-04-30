@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeShop</title>
+    <title>Clinic Center</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -17,7 +17,7 @@
         <!-- Navbar here -->
         <div class="py-2"></div>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand mb-0 h1" href="#">WeShop.</a>
+            <a class="navbar-brand mb-0 h1" href="#">Clinic Center.</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -50,134 +50,23 @@
         <div class="jumbotron bg-pinky rounded">
             <div class="row">
                 <div class="col-md">
-                    <h1 class="display-4">Hello, World!</h1>
+                    <h1 class="display-4">Health Care Plan, <br>Let us to provide you the best health Care.</h1>
                     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed earum, quas delectus, quibusdam illo vel voluptatem nesciunt quo maxime quidem error ducimus consequuntur</p>
                     <hr class="my-4">
                     <a href="http://">How they work&nbsp;&nbsp;<span>&#10230;</span></a>
                 </div>
                 <div class="col-md">
                     <div class="content-box">
-                        <img class="image-ilustrator" src="asset/image_content/pale-order-completed.png" alt="Ilustration by. Icons8">
+                        <img class="image-ilustrator" src="asset/image_content/doctor-ilustrations.png" alt="Ilustration by. Icons8">
                     </div>
                 </div>
             </div>
-            <div class="py-4"></div>
+            <div class="py-2"></div>
         </div>
 
-        <div class="row">
-            <div class="col-md-3">
-                <h4>Categories</h4>
-            </div>
-            <div class="col-md-9">
-                <!-- <div class="container">
-                    <div class="float-right">
-                        Sort by
-                    </div>
-                </div> -->
-
-                <div class="card-columns">
-                    <div class="card">
-                        <img src="asset/image_content/art1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">Card title that wraps to a new line</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="clearfix">
-                            <div class="float-left">
-                                &#9734; 4.6
-                            </div>
-                            <div class="float-right">
-                                <p class="card-text"><small class="text-muted">By. Missipi</small></p>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="card p-3">
-                        <blockquote class="blockquote mb-0 card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <footer class="blockquote-footer">
-                            <small class="text-muted">
-                            Someone famous in <cite title="Source Title">Source Title</cite>
-                            </small>
-                        </footer>
-                        </blockquote>
-                    </div>
-                    <div class="card">
-                        <img src="asset/image_content/art4.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <div class="clearfix">
-                            <div class="float-left">
-                                &#9734; 4.6
-                            </div>
-                            <div class="float-right">
-                                <p class="card-text"><small class="text-muted">By. Alex32</small></p>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="card bg-primary text-white text-center p-3">
-                        <blockquote class="blockquote mb-0">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-                        <footer class="blockquote-footer text-white">
-                            <small>
-                            Someone famous in <cite title="Source Title">Source Title</cite>
-                            </small>
-                        </footer>
-                        </blockquote>
-                    </div>
-                    <div class="card text-center">
-                        <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="asset/image_content/art2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="clearfix">
-                                <div class="float-left">
-                                    &#9734; 4.6
-                                </div>
-                                <div class="float-right">
-                                    <p class="card-text"><small class="text-muted">By. Muvin</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="asset/image_content/art3.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <div class="clearfix">
-                            <div class="float-left">
-                                &#9734; 4.6
-                            </div>
-                            <div class="float-right">
-                                <p class="card-text"><small class="text-muted">By. Grizi</small></p>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
-                        <div class="clearfix">
-                            <div class="float-left">
-                                &#9734; 4.6
-                            </div>
-                            <div class="float-right">
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <form action="#" method="post">
+        
+        </form>
     </div>
     <!-- END main content -->
 
