@@ -19,4 +19,3 @@ jumlah_pesanan :- nl,
     S is (X+R),
     write(S).
 
-

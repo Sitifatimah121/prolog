@@ -1,17 +1,17 @@
-aturan(1,1,1,1,1,1,1).
-aturan(2,2,1,1,1,1,1).
-aturan(3,2,2,1,1,1,1).
+aturan(1,1,1,1,2,1,1).
+aturan(2,2,2,2,1,1,1).
+aturan(3,1,2,2,2,1,1).
 
-jawaban(1, ' Sepertinya Anda sedang mengalami sakit Flu').
-jawaban(2, ' Sepertinya Anda sedang mengalami sakit Diare').
-jawaban(3, ' Sepertinya Anda sedang mengalami sakit Anemia').
+jawaban(1, ' Sepertinya Anda sedang mengalami gejala Flu').
+jawaban(2, ' Sepertinya Anda sedang mengalami gejala Diare').
+jawaban(3, ' Sepertinya Anda sedang mengalami gejala Anemia').
 
 obat(1, ' Paracetamol').
 obat(2, ' Diapet').
 obat(3, ' Sangobion').
 
 harga_obat(1, 5000).
-harga_obat(2, 3000).
+harga_obat(2, 4000).
 harga_obat(3, 8000).
 
 hasil_tes:-nl,
@@ -63,21 +63,3 @@ hasil_tes4:-nl,
     write(A).
 
 
-pertama(2).
-kedua(2).
-ketiga(2).
-keempat(2).
-kelima(2).
-keenam(2).
-pertama(1).
-kedua(1).
-ketiga(1).
-keempat(1).
-kelima(1).
-keenam(2).
-pertama(1).
-kedua(1).
-ketiga(1).
-keempat(1).
-kelima(1).
-keenam(2).
