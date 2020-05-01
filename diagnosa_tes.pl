@@ -1,3 +1,4 @@
+# implementasi modul 6 (binary tree)
 aturan(1,1,1,1,2,1,1).
 aturan(1,1,1,1,1,1,1).
 aturan(2,2,2,2,1,1,1).
@@ -11,10 +12,12 @@ obat(1, ' Paracetamol').
 obat(2, ' Diapet').
 obat(3, ' Sangobion').
 
+# implementasi modul 1 (pengenalan prolog)
 harga_obat(1, 5000).
 harga_obat(2, 4000).
 harga_obat(3, 8000).
 
+# implementasi modul logika
 hasil_tes:-nl,
     pertama(X),
     kedua(Y),

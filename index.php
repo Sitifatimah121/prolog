@@ -139,7 +139,7 @@
                                             <div class="form-group">
                                                 <input type="text" class="form-control" placeholder="Enter Your Answer *" name="answer" value="" />
                                             </div>
-                                            <button type="submit" name="subIdentity">Submit</button>
+                                            <button type="submit" name="subIdentity">Kirim</button>
                                         </div>
                                     </div>
                                 </form>
@@ -240,7 +240,7 @@
                                         <input type="radio" class="custom-control-input" id="customRadio12" name="keenam" value="2">
                                         <label class="custom-control-label" for="customRadio12">Tidak</label>
                                     </div><br><br><br>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <button type="submit" class="btn btn-primary">Cek Hasil</button>
                                 </form>
                             </div>
                         </div>

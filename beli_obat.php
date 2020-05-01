@@ -1,27 +1,23 @@
 <?php
 
 $jumlah_obat = $_POST['jumlah_obat'];
-// $jenis_sakit = $id;
+$jenis_sakit = $_GET['id'];
 
-// function beli_obat($psy,$psj)
-function beli_obat($psy)
+function beli_obat($psy,$psj)
 {
-    // modul2
     $file = fopen("beli_obat.pl", "a+") or die("Unable to open file!");
 
-    // if (!empty($psy, $psj)) {
     if (!empty($psy)) {
 
-        //modul2
         fprintf($file, "pertama($psy).\n");
+        fprintf($file, "kedua($psj).\n");
     }
 
     fclose($file);
 }
 
 
-// echo beli_obat($jumlah_obat, $jenis_sakit);
-echo beli_obat($jumlah_obat);
+echo beli_obat($jumlah_obat, $jenis_sakit);
 
 $cmd = "\"c:/program files/swipl/bin/swipl.exe\" -f beli_obat.pl -g hitung_harga,halt";  
 $out1 = exec($cmd); 
@@ -111,21 +107,15 @@ $out1 = exec($cmd);
                     <p class="lead">You’re about to use a short (3 min), safe and anonymous health checkup. Your answers will be carefully analyzed and you’ll learn about possible causes of your symptoms.</p>
                 </div>
                 <div class="col-md-9">
-                    <p class="lead">Hasilnya :<span style="color: coral"><?php echo $out1 ?></span></p><br>
-
                     <h2>Total harga obatnya Rp. <span style="color: coral"><?php echo $out1 ?></span></h2>
-                    <h2>Kami juga menyarankan Anda untuk membeli vitamin seharga Rp.1000 per butir</h2>
-                    <div class="container">
-                        <div style="margin: 100px" class="jawaban">
-                            <form action="beli_vit.php" method="POST">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Masukkan Jumlah Vitamin :</label>
-                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Angka list" name="jumlah_vit">
-                                </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </form>
+                    <h2>Kami juga menyarankan Anda untuk membeli vitamin seharga Rp.1000 per butir</h2><br>
+                    <form action="beli_vit.php?id=<?php echo $out1 ?>" method="POST">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Masukkan Jumlah Vitamin :</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Angka list" name="jumlah_vit">
                         </div>
-                    </div>
+                        <button type="submit" class="btn btn-primary">Pesan</button>
+                    </form>
                 </div>
             </div>
         </div>

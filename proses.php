@@ -1,60 +1,3 @@
-<?php
-
-$tes1 = $_POST['pertama'];
-$tes2 = $_POST['kedua'];
-$tes3 = $_POST['ketiga'];
-$tes4 = $_POST['keempat'];
-$tes5 = $_POST['kelima'];
-$tes6 = $_POST['keenam'];
-
-function tes_kesehatan($psy, $psj, $psk, $psl, $psm, $psn)
-{
-    $file = fopen("diagnosa_tes.pl", "a+") or die("Unable to open file!");
-
-    if (!empty($psy)) {
-
-        fprintf($file, "pertama($psy).\n");
-        fprintf($file, "kedua($psj).\n");
-        fprintf($file, "ketiga($psk).\n");
-        fprintf($file, "keempat($psl).\n");
-        fprintf($file, "kelima($psm).\n");
-        fprintf($file, "keenam($psn).\n");
-    }
-
-    fclose($file);
-}
-
-echo tes_kesehatan($tes1, $tes2, $tes3, $tes4, $tes5, $tes6);
-
-$cmd = "\"c:/program files/swipl/bin/swipl.exe\" -f diagnosa_tes.pl -g hasil_tes,halt"; 
-$cmd2 = "\"c:/program files/swipl/bin/swipl.exe\" -f diagnosa_tes.pl -g hasil_tes2,halt";
-$cmd3 = "\"c:/program files/swipl/bin/swipl.exe\" -f diagnosa_tes.pl -g hasil_tes3,halt"; 
-$cmd4 = "\"c:/program files/swipl/bin/swipl.exe\" -f diagnosa_tes.pl -g hasil_tes4,halt";  
-$out1 = exec($cmd); 
-$out2 = exec($cmd2); 
-$out3 = exec($cmd3); 
-$out4 = exec($cmd4);
-
-// Default answer
-$default = "Tubuh Anda baik-baik saja, hanya sedikit mengalami kelelahan. Kami menganjurkan Anda memperbanyak istirahat.";
-
-if ($out2 == 1) {
-    $out1 = $out1;
-    $out3 = $out3;
-    $out4 = $out4;
-} else if ($out2 == 2) {
-    $out1 = $out1;
-    $out3 = $out3;
-    $out4 = $out4;
-} else if ($out2 == 3) {
-    $out1 = $out1;
-    $out3 = $out3;
-    $out4 = $out4;
-} else {
-    $out1 = "Tubuh Anda baik-baik saja, hanya sedikit mengalami kelelahan. Kami menganjurkan Anda memperbanyak istirahat.";
-}
-?>
-
 <?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -138,21 +81,14 @@ if ($out2 == 1) {
                     <p class="lead">You’re about to use a short (3 min), safe and anonymous health checkup. Your answers will be carefully analyzed and you’ll learn about possible causes of your symptoms.</p>
                 </div>
                 <div class="col-md-9">
-                    <p class="lead">Hasilnya :<span style="color: coral"><?php echo $out1 ?></span></p><br>
-
-                    <?php
-                        if($out1 != $default) :
-                    ?>
-                        <p>Saran obat : <span style="color: coral"><?php echo $out3 ?></span> seharga : Rp.<span style="color: coral"><?php echo $out4 ?></span></p>
-                        <br>
-                        <form action="beli_obat.php?id=<?php echo $out2 ?>" method="POST">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Masukkan Jumlah Obat :</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Angka list" name="jumlah_obat">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Pesan</button>
-                        </form>
-                    <?php endif; ?>
+                    <h1 style="text-align: center">Pesanan Segera Diproses </h1>
+                    <div class="container">
+                        <div style="margin: 50px 320px" class="jawaban">
+                            <form action="index.php" method="POST">
+                                <button type="submit" class="btn btn-primary">Selesai</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
