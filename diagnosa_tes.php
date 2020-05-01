@@ -65,7 +65,7 @@ if ($out2 == 1) {
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Kelompok 5</title>
+    <title>Kelompok 6</title>
     <meta content="" name="descriptison">
     <meta content="" name="keywords">
 
@@ -94,7 +94,7 @@ if ($out2 == 1) {
         <div class="container d-flex">
 
             <div class="logo mr-auto">
-                <h1 class="text-light"><a href="index.php"><span>KELOMPOK</span></a></h1>
+                <h1 class="text-light"><a href="index.php"><span>KELOMPOK 6</span></a></h1>
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
             </div>
@@ -105,12 +105,12 @@ if ($out2 == 1) {
 
                     <li class="drop-down"><a href="#">Team</a>
                         <ul>
-                            <li><a href="#">L. Gilang Obidia</a></li>
-                            <li><a href="#">Rafli Satriya</a></li>
-                            <li><a href="#">Ramadhani Akbar</a></li>
-                            <li><a href="#">Rizki Khoirun Nisa</a></li>
-                            <li><a href="#">Siti Fatimah</a></li>
-                            <li><a href="#">Zaka M. Noor</a></li>
+                            <li><a href="#">L. GILANG OBID</a></li>
+                            <li><a href="#">RAFLI SATRIA</a></li>
+                            <li><a href="#">RAMADHANI AKBAR ILMIAWAN</a></li>
+                            <li><a href="#">RIZKI KHOIRUN NISA</a></li>
+                            <li><a href="#">SITI FATIMAH</a></li>
+                            <li><a href="#">ZAKA M. NOOR</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -168,7 +168,7 @@ if ($out2 == 1) {
 
         <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong><span>Kelompok 5</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Kelompok 6</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
