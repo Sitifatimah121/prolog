@@ -10,3 +10,5 @@ hitung_harga:-nl,
     ketiga(A,B),
     R is (X*B),
     write(R).
+
+

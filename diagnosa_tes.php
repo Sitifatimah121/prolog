@@ -42,7 +42,7 @@ $out4 = exec($cmd4);
 // exit();
 
 // Default answer
-$default = "Tubuh Anda baik-baik saja, hanya sedikit mengalami kelelahan. Kami menganjurkan Anda memperbanyak istirahat.";$out1 = "Tubuh Anda baik-baik saja, hanya sedikit mengalami kelelahan. Kami menganjurkan Anda memperbanyak istirahat.";
+$default = "Tubuh Anda baik-baik saja, hanya sedikit mengalami kelelahan. Kami menganjurkan Anda memperbanyak istirahat.";
 
 if ($out2 == 1) {
     $out1 = $out1;
@@ -57,7 +57,7 @@ if ($out2 == 1) {
     $out3 = $out3;
     $out4 = $out4;
 } else {
-    $out1 = "Tubuh Anda baik-baik saja, hanya sedikit mengalami kelelahan. Kami menganjurkan Anda memperbanyak istirahat.";$out1 = "Tubuh Anda baik-baik saja, hanya sedikit mengalami kelelahan. Kami menganjurkan Anda memperbanyak istirahat.";
+    $out1 = "Tubuh Anda baik-baik saja, hanya sedikit mengalami kelelahan. Kami menganjurkan Anda memperbanyak istirahat.";
 }
 ?>
 
