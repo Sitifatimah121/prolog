@@ -63,3 +63,9 @@ hasil_tes4:-nl,
     write(A).
 
 
+pertama(2).
+kedua(2).
+ketiga(2).
+keempat(2).
+kelima(2).
+keenam(2).
