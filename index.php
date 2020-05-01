@@ -175,7 +175,7 @@
                                 if(isset($_POST["subIdentity"])) :
                             ?>
                                 <div class="alert alert-success alert-dismissible fade show animated shake" role="alert">
-                                    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                                    <strong>Holy yeay!</strong> next, you can diagnoses on medical check up
                                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -185,44 +185,63 @@
                         <div class="tab-pane fade show py-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <div class="container">
                                 <h6  class="lead">Diagnoses</h6>
-                                <div class="row register-form">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="First Name *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Last Name *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Email *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" maxlength="10" minlength="10" class="form-control" placeholder="Phone *" value="" />
-                                        </div>
-
-
+                                <form action="diagnosa_tes.php" method="post">
+                                    <label for="">Apakah Anda merasa pusing? </label><br>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="customRadio" name="pertama" value="1">
+                                        <label class="custom-control-label" for="customRadio">Ya</label>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" placeholder="Password *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <select class="form-control">
-                                                <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
-                                                <option>What is your Birthdate?</option>
-                                                <option>What is Your old Phone Number</option>
-                                                <option>What is your Pet Name?</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="`Answer *" value="" />
-                                        </div>
-                                        <input type="submit" class="btnRegister"  value="Register"/>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="customRadio2" name="pertama" value="2">
+                                        <label class="custom-control-label" for="customRadio2">Tidak</label>
+                                    </div><br><br><br>
+                                    <label for="">Apakah Anda mengalami batuk dan pilek?</label><br>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="customRadio3" name="kedua" value="1">
+                                        <label class="custom-control-label" for="customRadio3">Ya</label>
                                     </div>
-                                </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="customRadio4" name="kedua" value="2">
+                                        <label class="custom-control-label" for="customRadio4">Tidak</label>
+                                    </div><br><br><br>
+                                    <label for="">Apakah Anda mengalami demam?</label><br>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="customRadio5" name="ketiga" value="1">
+                                        <label class="custom-control-label" for="customRadio5">Ya</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="customRadio6" name="ketiga" value="2">
+                                        <label class="custom-control-label" for="customRadio6">Tidak</label>
+                                    </div><br><br><br>
+                                    <label for="">Apakah Anda mengalami sakit perut?</label><br>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="customRadio7" name="keempat" value="1">
+                                        <label class="custom-control-label" for="customRadio7">Ya</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="customRadio8" name="keempat" value="2">
+                                        <label class="custom-control-label" for="customRadio8">Tidak</label>
+                                    </div><br><br><br>
+                                    <label for="">Apakah Anda mengalami mual dan muntah?</label><br>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="customRadio9" name="kelima" value="1">
+                                        <label class="custom-control-label" for="customRadio9">Ya</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="customRadio10" name="kelima" value="2">
+                                        <label class="custom-control-label" for="customRadio10">Tidak</label>
+                                    </div><br><br><br>
+                                    <label for="">Apakah Anda merasa sangat lelah?</label><br>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="customRadio11" name="keenam" value="1">
+                                        <label class="custom-control-label" for="customRadio11">Ya</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="customRadio12" name="keenam" value="2">
+                                        <label class="custom-control-label" for="customRadio12">Tidak</label>
+                                    </div><br><br><br>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
                             </div>
                         </div>
                     </div>
