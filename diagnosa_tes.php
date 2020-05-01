@@ -133,25 +133,26 @@ if ($out2 == 1) {
         </div>
 
         <!-- Here result -->
-        <div class="modul1">
-            <h1 style="text-align: center">Hasil </h1>
-        </div>
-        <div style="margin: 100px" class="jawaban">
-
-        </div>
-        <div style="margin: 100px" class="jawaban">
-
-        </div>
-        <h2>Hasilnya kami : <span style="color: coral"><?php echo $out1 ?></span></h2><br>
-        <h2>Saran obat : <span style="color: coral"><?php echo $out3 ?></span> seharga : Rp.<span style="color: coral"><?php echo $out4 ?></span></h2>
-        <br>
-        <form action="beli_obat.php" method="POST">
-            <div class="form-group">
-                <label for="exampleInputEmail1">Masukkan Jumlah Obat :</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Angka list" name="jumlah_obat">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3 class="display">Hello</h3>
+                    <p class="lead">You’re about to use a short (3 min), safe and anonymous health checkup. Your answers will be carefully analyzed and you’ll learn about possible causes of your symptoms.</p>
+                </div>
+                <div class="col-md-9">
+                    <p class="lead">Hasilnya :<span style="color: coral"><?php echo $out1 ?></span></p><br>
+                    <p>Saran obat : <span style="color: coral"><?php echo $out3 ?></span> seharga : Rp.<span style="color: coral"><?php echo $out4 ?></span></p>
+                    <br>
+                    <form action="beli_obat.php" method="POST">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Masukkan Jumlah Obat :</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Angka list" name="jumlah_obat">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        </div>
         <!-- End result -->
 
     </div>

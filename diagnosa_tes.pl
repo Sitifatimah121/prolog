@@ -69,3 +69,15 @@ ketiga(2).
 keempat(2).
 kelima(2).
 keenam(2).
+pertama(1).
+kedua(1).
+ketiga(1).
+keempat(1).
+kelima(1).
+keenam(2).
+pertama(1).
+kedua(1).
+ketiga(1).
+keempat(1).
+kelima(1).
+keenam(2).
