@@ -113,11 +113,11 @@ $out2 = exec($cmd2);
                     <form action="bayar_obat.php?id=<?php echo $out2 ?>" method="POST">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Masukkan Nama Anda : </label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Angka list" name="nama">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Anda" name="nama">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Masukkan Alamat Anda : </label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Angka list" name="alamat">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Alamat Anda" name="alamat">
                         </div>
                         <button type="submit" class="btn btn-primary">Proses</button>
                     </form>

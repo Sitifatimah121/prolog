@@ -148,7 +148,7 @@ if ($out2 == 1) {
                         <form action="beli_obat.php?id=<?php echo $out2 ?>" method="POST">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Masukkan Jumlah Obat :</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Angka list" name="jumlah_obat">
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Jumlah Obat" name="jumlah_obat">
                             </div>
                             <button type="submit" class="btn btn-primary">Pesan</button>
                         </form>

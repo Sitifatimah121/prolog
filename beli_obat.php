@@ -112,7 +112,7 @@ $out1 = exec($cmd);
                     <form action="beli_vit.php?id=<?php echo $out1 ?>" method="POST">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Masukkan Jumlah Vitamin :</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Angka list" name="jumlah_vit">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Jumlah Vitamin" name="jumlah_vit">
                         </div>
                         <button type="submit" class="btn btn-primary">Pesan</button>
                     </form>
