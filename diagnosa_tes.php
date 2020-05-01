@@ -37,8 +37,12 @@ $out1 = exec($cmd);
 $out2 = exec($cmd2); 
 $out3 = exec($cmd3); 
 $out4 = exec($cmd4);
-// $out = `swipl -s modul6.pl -g "program." -t halt. `;
-// $outt = `swipl -s modul6.pl -g "programm." -t halt. `;
+
+// var_dump($out2);
+// exit();
+
+// Default answer
+$default = "Tubuh Anda baik-baik saja, hanya sedikit mengalami kelelahan. Kami menganjurkan Anda memperbanyak istirahat.";$out1 = "Tubuh Anda baik-baik saja, hanya sedikit mengalami kelelahan. Kami menganjurkan Anda memperbanyak istirahat.";
 
 if ($out2 == 1) {
     $out1 = $out1;
@@ -53,7 +57,7 @@ if ($out2 == 1) {
     $out3 = $out3;
     $out4 = $out4;
 } else {
-    $out1 = "Tubuh Anda baik-baik saja, hanya sedikit mengalami kelelahan. Kami menganjurkan Anda memperbanyak istirahat.";
+    $out1 = "Tubuh Anda baik-baik saja, hanya sedikit mengalami kelelahan. Kami menganjurkan Anda memperbanyak istirahat.";$out1 = "Tubuh Anda baik-baik saja, hanya sedikit mengalami kelelahan. Kami menganjurkan Anda memperbanyak istirahat.";
 }
 ?>
 
@@ -141,15 +145,20 @@ if ($out2 == 1) {
                 </div>
                 <div class="col-md-9">
                     <p class="lead">Hasilnya :<span style="color: coral"><?php echo $out1 ?></span></p><br>
-                    <p>Saran obat : <span style="color: coral"><?php echo $out3 ?></span> seharga : Rp.<span style="color: coral"><?php echo $out4 ?></span></p>
-                    <br>
-                    <form action="beli_obat.php" method="POST">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Masukkan Jumlah Obat :</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Angka list" name="jumlah_obat">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+
+                    <?php
+                        if($out1 != $default) :
+                    ?>
+                        <p>Saran obat : <span style="color: coral"><?php echo $out3 ?></span> seharga : Rp.<span style="color: coral"><?php echo $out4 ?></span></p>
+                        <br>
+                        <form action="beli_obat.php" method="POST">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Masukkan Jumlah Obat :</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Angka list" name="jumlah_obat">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
@@ -158,127 +167,127 @@ if ($out2 == 1) {
     </div>
     <!-- END main content -->
 
-<!-- Footer -->
-<footer class="page-footer font-small indigo">
+    <!-- Footer -->
+    <footer class="page-footer font-small indigo">
 
-  <!-- Footer Links -->
-  <div class="container">
+    <!-- Footer Links -->
+    <div class="container">
 
-    <!-- Grid row-->
-    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5 mb-3">
 
-      <!-- Grid column -->
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="#!">About us</a>
-        </h6>
-      </div>
-      <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">About us</a>
+            </h6>
+        </div>
+        <!-- Grid column -->
 
-      <!-- Grid column -->
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="#!">Products</a>
-        </h6>
-      </div>
-      <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">Products</a>
+            </h6>
+        </div>
+        <!-- Grid column -->
 
-      <!-- Grid column -->
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="#!">Awards</a>
-        </h6>
-      </div>
-      <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">Awards</a>
+            </h6>
+        </div>
+        <!-- Grid column -->
 
-      <!-- Grid column -->
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="#!">Help</a>
-        </h6>
-      </div>
-      <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">Help</a>
+            </h6>
+        </div>
+        <!-- Grid column -->
 
-      <!-- Grid column -->
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="#!">Contact</a>
-        </h6>
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row-->
-    <hr class="rgba-white-light" style="margin: 0 15%;">
-
-    <!-- Grid row-->
-    <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
-
-      <!-- Grid column -->
-      <div class="col-md-8 col-12 mt-5">
-        <p style="line-height: 1.7rem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem
-          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-          explicabo.
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row-->
-    <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
-
-    <!-- Grid row-->
-    <div class="row pb-3">
-
-      <!-- Grid column -->
-      <div class="col-md-12">
-
-        <div class="mb-5 flex-center">
-
-          <!-- Facebook -->
-          <a class="fb-ic">
-            <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
-          </a>
-          <!-- Twitter -->
-          <a class="tw-ic">
-            <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
-          </a>
-          <!-- Google +-->
-          <a class="gplus-ic">
-            <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
-          </a>
-          <!--Linkedin -->
-          <a class="li-ic">
-            <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
-          </a>
-          <!--Instagram-->
-          <a class="ins-ic">
-            <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
-          </a>
-          <!--Pinterest-->
-          <a class="pin-ic">
-            <i class="fab fa-pinterest fa-lg white-text"> </i>
-          </a>
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">Contact</a>
+            </h6>
+        </div>
+        <!-- Grid column -->
 
         </div>
+        <!-- Grid row-->
+        <hr class="rgba-white-light" style="margin: 0 15%;">
 
-      </div>
-      <!-- Grid column -->
+        <!-- Grid row-->
+        <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+        <!-- Grid column -->
+        <div class="col-md-8 col-12 mt-5">
+            <p style="line-height: 1.7rem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem
+            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+            explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+        </div>
+        <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+        <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+
+        <!-- Grid row-->
+        <div class="row pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-12">
+
+            <div class="mb-5 flex-center">
+
+            <!-- Facebook -->
+            <a class="fb-ic">
+                <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+                <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+                <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+                <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+                <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic">
+                <i class="fab fa-pinterest fa-lg white-text"> </i>
+            </a>
+
+            </div>
+
+        </div>
+        <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
 
     </div>
-    <!-- Grid row-->
+    <!-- Footer Links -->
 
-  </div>
-  <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">Footer by
+        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">Footer by
-    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
+    </footer>
 <!-- Footer -->
 
     <!-- Javascript end of body -->

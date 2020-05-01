@@ -1,4 +1,5 @@
 aturan(1,1,1,1,1,1,1).
+aturan(2,2,2,2,2,2,2).
 aturan(2,2,1,1,1,1,1).
 aturan(3,2,2,1,1,1,1).
 
@@ -24,7 +25,7 @@ hasil_tes:-nl,
     
     aturan(R,X,Y,Z,K,L,M),
     jawaban(R,A),
-    write(A).
+    write(R).
 
 hasil_tes2:-nl,
     pertama(X),
@@ -36,7 +37,7 @@ hasil_tes2:-nl,
     
     aturan(R,X,Y,Z,K,L,M),
     jawaban(R,A),
-    write(R).
+    write(A).
 
 hasil_tes3:-nl,
     pertama(X),
@@ -62,22 +63,3 @@ hasil_tes4:-nl,
     harga_obat(R,A),
     write(A).
 
-
-pertama(2).
-kedua(2).
-ketiga(2).
-keempat(2).
-kelima(2).
-keenam(2).
-pertama(1).
-kedua(1).
-ketiga(1).
-keempat(1).
-kelima(1).
-keenam(2).
-pertama(1).
-kedua(1).
-ketiga(1).
-keempat(1).
-kelima(1).
-keenam(2).
