@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +11,8 @@
 
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/db95e67526.js" crossorigin="anonymous"></script>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
     <!-- Main css -->
     <link rel="stylesheet" href="css/style.css">
@@ -70,7 +73,7 @@
             <div class="py-2"></div>
         </div>
 
-        <div class="container">
+        <div id="form" class="container py-4">
             <div class="row">
                 <div class="col-md-3 register-left">
                     <h3 class="display">Hello</h3>
@@ -89,21 +92,21 @@
                         <div class="tab-pane fade show active py-4" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <div class="container">
                                 <h6 class="lead">Enter your identity</h6>
-                                <form action="#.php" method="post">
+                                <form action="#form" method="post">
                                     <!-- Send data to this page with session -->
                                     <div class="row register-form">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="First Name *" value="" />
+                                                <input type="text" class="form-control" placeholder="First Name *" name="firstName" value="" />
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                                                <input type="text" class="form-control" placeholder="Last Name *" name="lastName" value="" />
                                             </div>
                                             <div class="form-group">
-                                                <input type="password" class="form-control" placeholder="Password *" value="" />
+                                                <input type="password" class="form-control" placeholder="Password *" name="pwd" value="" />
                                             </div>
                                             <div class="form-group">
-                                                <input type="password" class="form-control"  placeholder="Confirm Password *" value="" />
+                                                <input type="password" class="form-control"  placeholder="Confirm Password *" name="confirmPwd" value="" />
                                             </div>
                                             <div class="form-group">
                                                 <div class="maxl">
@@ -120,10 +123,10 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input type="email" class="form-control" placeholder="Your Email *" value="" />
+                                                <input type="email" class="form-control" placeholder="Your Email *" name="email" value="" />
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" />
+                                                <input type="text" minlength="10" maxlength="10" class="form-control" placeholder="Your Phone *" name="phone" value="" />
                                             </div>
                                             <div class="form-group">
                                                 <select class="form-control">
@@ -134,13 +137,50 @@
                                                 </select>
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Enter Your Answer *" value="" />
+                                                <input type="text" class="form-control" placeholder="Enter Your Answer *" name="answer" value="" />
                                             </div>
                                             <button type="submit" name="subIdentity">Submit</button>
                                         </div>
                                     </div>
                                 </form>
                             </div>
+                            <?php
+                                // Process when user submit identity
+                                if(isset($_POST["subIdentity"]))
+                                {
+                                    $fName = $_POST["firstName"];
+                                    $lName = $_POST["lastName"];
+                                    $pwd   = md5($_POST["pwd"]);
+                                    $confirm = md5($_POST["confirmPwd"]);
+
+                                    $email = $_POST["email"];
+                                    $phone = $_POST["phone"];
+                                    // $questions = $_POST["selectQuestions"];
+                                    $answer = $_POST["answer"];
+
+                                    // Save all data into Session ID
+                                    $_SESSION["userData"] = [
+                                        "firstName" => $fName,
+                                        "lastName" => $lName,
+                                        "password" => $pwd,
+                                        "confirm" => $confirm,
+                                        "email" => $email,
+                                        "phone" => $phone,
+                                        "answer" => $answer
+                                    ];
+                                }
+
+
+                                // Create session flash message
+                                if(isset($_POST["subIdentity"])) :
+                            ?>
+                                <div class="alert alert-success alert-dismissible fade show animated shake" role="alert">
+                                    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            <?php endif; ?>
                         </div>
                         <div class="tab-pane fade show py-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <div class="container">
